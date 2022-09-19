@@ -1,0 +1,6 @@
+D:\VirtusaProject\RailwayReservation\Railway.Entities\bin\Debug\Railway.Entities.dll
+D:\VirtusaProject\RailwayReservation\Railway.Entities\bin\Debug\Railway.Entities.pdb
+D:\VirtusaProject\RailwayReservation\Railway.Entities\obj\Debug\Railway.Entities.csproj.AssemblyReference.cache
+D:\VirtusaProject\RailwayReservation\Railway.Entities\obj\Debug\Railway.Entities.csproj.CoreCompileInputs.cache
+D:\VirtusaProject\RailwayReservation\Railway.Entities\obj\Debug\Railway.Entities.dll
+D:\VirtusaProject\RailwayReservation\Railway.Entities\obj\Debug\Railway.Entities.pdb

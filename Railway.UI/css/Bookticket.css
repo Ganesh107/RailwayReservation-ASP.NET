@@ -1,0 +1,33 @@
+﻿
+.label1{
+    font-size:large;
+}
+
+.row1{
+    background-color:lightgrey;
+}
+
+.style1{
+    font-size:small;
+}
+
+.col-md-1{
+    float:right;
+}
+
+.linkbtn:hover{
+    text-decoration:none;
+}
+
+.color {
+    background-color:dodgerblue;
+}
+
+.txtcolor{
+    color:white;
+    float:right;
+}
+
+.tktfare{
+    float:right;
+}

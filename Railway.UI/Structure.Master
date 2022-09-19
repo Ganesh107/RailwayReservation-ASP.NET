@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Structure.master.cs" Inherits="Railway.UI.Structure" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootstrap css--%>
+    <link href="BootstrapCSS/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%--master.css--%>
+    <link href="css/master.css" rel="stylesheet" />
+
+    <%--jquery js--%>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="js/bootstrap.min.js"></script>
+    <%--sweetalert js--%>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="Homepage.aspx"><i class="fa-solid fa-train-subway"></i> Railway Reservation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="Homepage.aspx">Home</a>
+                    <a class="nav-item nav-link" href="#BookTickets">Book Tickets</a>
+                    <a class="nav-item nav-link" href="#holidays">Holidays</a>
+                    <a class="nav-item nav-link" href="#specialities">Specialities</a>
+                    <a class="nav-item nav-link" href="UserLogin.aspx">Login</a>
+                    <a class="nav-item nav-link" href="AdminLogin.aspx">Admin</a>
+                    <asp:Label ID="Welcome" runat="server" class="welcomelabel"></asp:Label>
+                    <asp:Button ID="LogoutButton" runat="server" Text="Log out" CssClass="btn btn-outline-danger" OnClick="LogoutButton_Click1" CausesValidation="False"/>
+                </div>
+           </div>
+    </nav>
+
+        <%--Main content placeholder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceholder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <%--Footer--%>
+        <footer class="text-center text-white bg-dark">
+            <p>&copy All Rights Reserved</p>
+            <p><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;<i class="fa-brands fa-twitter"></i></p>      
+        </footer>
+   </form>
+</body>
+</html>

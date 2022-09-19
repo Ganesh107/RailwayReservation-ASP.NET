@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railway.Entities", "Railway.Entities\Railway.Entities.csproj", "{D068574C-021A-4BBE-B38C-5B8E2BB15552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railway.Datalayer", "Railway.Datalayer\Railway.Datalayer.csproj", "{27790555-0FC3-459E-B9A8-9CDE0853FA74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railway.BusinessLayer", "Railway.BusinessLayer\Railway.BusinessLayer.csproj", "{B8E7808F-4CFE-4F53-8667-47F6807AA2A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Railway.UI", "Railway.UI\Railway.UI.csproj", "{45DCDB4C-031B-4200-BDD9-7757292E8327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D068574C-021A-4BBE-B38C-5B8E2BB15552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D068574C-021A-4BBE-B38C-5B8E2BB15552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D068574C-021A-4BBE-B38C-5B8E2BB15552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D068574C-021A-4BBE-B38C-5B8E2BB15552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27790555-0FC3-459E-B9A8-9CDE0853FA74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27790555-0FC3-459E-B9A8-9CDE0853FA74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27790555-0FC3-459E-B9A8-9CDE0853FA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27790555-0FC3-459E-B9A8-9CDE0853FA74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E7808F-4CFE-4F53-8667-47F6807AA2A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E7808F-4CFE-4F53-8667-47F6807AA2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E7808F-4CFE-4F53-8667-47F6807AA2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E7808F-4CFE-4F53-8667-47F6807AA2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DCDB4C-031B-4200-BDD9-7757292E8327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DCDB4C-031B-4200-BDD9-7757292E8327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DCDB4C-031B-4200-BDD9-7757292E8327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DCDB4C-031B-4200-BDD9-7757292E8327}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {539126E0-E5DC-4E81-A7A2-4DB65509BD80}
+	EndGlobalSection
+EndGlobal

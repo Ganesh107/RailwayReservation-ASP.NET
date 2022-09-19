@@ -1,0 +1,22 @@
+﻿
+.loginlabel{
+    font-size:small;
+}
+
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+    font-weight:bold;
+}
+
+a:hover{
+    text-decoration:none!important;
+}
+
+.card {
+    box-shadow: 1px 1px 8px 1px grey;
+}
+
+.main-img {
+    height:400px;
+}

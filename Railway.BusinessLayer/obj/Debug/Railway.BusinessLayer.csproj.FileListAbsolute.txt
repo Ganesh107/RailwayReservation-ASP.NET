@@ -1,0 +1,12 @@
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.BusinessLayer.dll
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.BusinessLayer.pdb
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.Datalayer.dll
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.Entities.dll
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.Datalayer.pdb
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.Datalayer.dll.config
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\bin\Debug\Railway.Entities.pdb
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\obj\Debug\Railway.BusinessLayer.csproj.AssemblyReference.cache
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\obj\Debug\Railway.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\obj\Debug\Railway.BusinessLayer.csproj.CopyComplete
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\obj\Debug\Railway.BusinessLayer.dll
+D:\VirtusaProject\RailwayReservation\Railway.BusinessLayer\obj\Debug\Railway.BusinessLayer.pdb

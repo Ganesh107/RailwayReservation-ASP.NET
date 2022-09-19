@@ -1,0 +1,69 @@
+﻿
+body {
+    background-image: url('../images/img4.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+h1{
+    color:white;
+    font-size:40px;
+    margin-top:100px;
+}
+
+p{
+    font-size:18px;
+    color:white;
+}
+
+h3{
+    color:white;
+    font-size:25px;
+    margin-top:35px;
+}
+
+.fa-user-plus{
+    color:white;
+    font-size:25px;
+    float:right;
+    margin-top:35px;
+}
+
+hr{
+    border-color:white;
+}
+
+.label{
+    color:white;
+    font-size:14px;
+    font-weight:normal;
+    margin-top:15px;
+}
+
+.col-md-5{
+    margin-top:70px;
+    box-shadow:-1px 1px 60px 10px black;
+    background:rgba(0,0,0,0.5);
+}
+
+.form-control {
+    background: transparent;
+    background-color: rgba(0,0,0,0) !important;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.transparent-input{
+    background-color: rgba(0,0,0,0) !important;
+}
+
+a:hover{
+    text-decoration:none;
+}
