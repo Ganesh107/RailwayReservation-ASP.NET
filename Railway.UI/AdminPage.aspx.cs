@@ -71,5 +71,10 @@ namespace Railway.UI
                 throw;
             }
         }
+
+        public void EditTrainbtn_click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditTrains.aspx");
+        }
     }
 }

@@ -13,6 +13,7 @@
                                 <center><h4 class="font-weight-bold">TICKET DETAILS</h4></center>
                             </div>
                         </div>
+                        <hr />
                         <div class="row">
                             <div class="col">
                                 <asp:GridView ID="TicketGridView" runat="server" CssClass="table table-striped"></asp:GridView>

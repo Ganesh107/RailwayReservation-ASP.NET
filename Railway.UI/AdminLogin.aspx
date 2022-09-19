@@ -52,7 +52,6 @@
                                 <div class="form-group">
                                     <asp:Button ID="AdminLoginButton" runat="server" Text="Login" class="btn btn-success btn-block" OnClick="ValidateLogin"/>
                                 </div>
-                                <a href="AdminPage.aspx"> >>Add Trains (Login required)</a>
                             </div>
                         </div>
                     </div>

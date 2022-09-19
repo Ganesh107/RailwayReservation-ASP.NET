@@ -189,11 +189,91 @@ namespace Railway.Datalayer
         }
 
         //Function to update train seats - Ac-2tier
-        public void UpdateSeats(int quantity, int trainnumber,string ticketclass)
+        public void UpdateSeats(int quantity, int trainnumber)
         {
             try
             {
                 string query = $"update traininfo set Ac2tier = Ac2tier-{quantity} where trainnumber={trainnumber}";
+                conn.Open();
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //Function to update train seats - Ac-3tier
+        public void UpdateAc3TierSeats(int quantity, int trainnumber)
+        {
+            try
+            {
+                string query = $"update traininfo set Ac3tier = Ac3tier-{quantity} where trainnumber={trainnumber}";
+                conn.Open();
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //Function to update train seats - sleeper class
+        public void UpdateSleeperSeats(int quantity, int trainnumber)
+        {
+            try
+            {
+                string query = $"update traininfo set sleeper = sleeper-{quantity} where trainnumber={trainnumber}";
+                conn.Open();
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //Function to update train seats - Tatkal class
+        public void UpdateTatkalSeats(int quantity, int trainnumber)
+        {
+            try
+            {
+                string query = $"update traininfo set Tatkal = Tatkal-{quantity} where trainnumber={trainnumber}";
+                conn.Open();
+                cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        //Function to update train seats - ladies class
+        public void UpdateLadiesSeats(int quantity, int trainnumber)
+        {
+            try
+            {
+                string query = $"update traininfo set ladies = ladies-{quantity} where trainnumber={trainnumber}";
                 conn.Open();
                 cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery();

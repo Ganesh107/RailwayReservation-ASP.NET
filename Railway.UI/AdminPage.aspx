@@ -98,11 +98,13 @@
                         </div>
                            <br />
                         <div class="row">
-                            <div class="form-group col-12">
+                            <div class="form-group col-md-6">
                                 <asp:Button ID="AddTrainButton" runat="server" Text="Add Train" CssClass="btn btn-primary btn-block" OnClick="AddTrainButton_Click"/>
                             </div>
+                            <div class="col-md-6">
+                                <asp:Button ID="EditTrainbtn" runat="server" Text="Edit Train" CssClass="btn btn-secondary btn-block" OnClick="EditTrainbtn_click" CausesValidation="false"/>
+                            </div>
                         </div>
-                
                     </div>
                 </div>
             </div>

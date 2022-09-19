@@ -55,10 +55,7 @@
 
                                 <div class="form-group">
                                     <asp:Button ID="SignupButton" runat="server" Text="Sign Up" CssClass="btn btn-primary btn-block" OnClick="SignupButton_Click" CausesValidation="False"/>
-                                </div>
-                                <br />
-                                <a href="Homepage.aspx" class="nodecoration">Return Home</a>
-                                <br />                             
+                                </div>                            
                             </div>
                         </div>
                     </div>

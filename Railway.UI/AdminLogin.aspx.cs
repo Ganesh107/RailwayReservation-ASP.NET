@@ -30,7 +30,8 @@ namespace Railway.UI
                 if (admin.Passwords == password)
                 {
                     ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Login Success','Welcome Admin!','success')", true);
-                    Session["Adminid"] = admin.Adminid;                   
+                    Session["Adminid"] = admin.Adminid;
+                    Response.Redirect("AdminPage.aspx");
                 }
                 else
                 {

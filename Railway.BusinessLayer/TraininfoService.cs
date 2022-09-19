@@ -78,7 +78,7 @@ namespace Railway.BusinessLayer
                 throw;
             }
         }
-    
+
         //Function to check if trainnumber already exist
         public bool CheckIfTrainnumberExists(int trainnumber)
         {
@@ -95,12 +95,12 @@ namespace Railway.BusinessLayer
         }
 
         //Function to get Train details using starting location and ending location
-        public DataTable FilterTrains(string start_loc,string end_loc,string date)
+        public DataTable FilterTrains(string start_loc, string end_loc, string date)
         {
             try
             {
                 //calling datalayer function
-                return traininfoRepository.FilterTrains(start_loc,end_loc,date);
+                return traininfoRepository.FilterTrains(start_loc, end_loc, date);
             }
             catch (Exception)
             {
@@ -108,10 +108,34 @@ namespace Railway.BusinessLayer
             }
         }
 
-        //Function to update train seats
-        public void UpdateSeats(int quantity, int trainnumber, string ticketclass)
+        //Function to update train Ac2tier-seats
+        public void UpdateSeats(int quantity, int trainnumber)
         {
-            traininfoRepository.UpdateSeats(quantity, trainnumber, ticketclass);
+            traininfoRepository.UpdateSeats(quantity, trainnumber);
+        }
+
+        //Function to update train Ac3tier-seats
+        public void UpdateAc3TierSeats(int quantity, int trainnumber)
+        {
+            traininfoRepository.UpdateAc3TierSeats(quantity, trainnumber);
+        }
+
+        //Function to update train sleeper-seats
+        public void UpdateSleeperSeats(int quantity, int trainnumber)
+        {
+            traininfoRepository.UpdateSleeperSeats(quantity, trainnumber);
+        }
+
+        //Function to update train seats - Tatkal class
+        public void UpdateTatkalSeats(int quantity, int trainnumber)
+        {
+            traininfoRepository.UpdateTatkalSeats(quantity, trainnumber);
+        }
+
+        //Function to update train seats - ladies class
+        public void UpdateLadiesSeats(int quantity, int trainnumber)
+        {
+            traininfoRepository.UpdateLadiesSeats(quantity, trainnumber);
         }
     }
 }

@@ -51,6 +51,11 @@ namespace Railway.UI
                         //retrieving userid of the newly registered user
                         int userid = passengersService.GetPassengerId(passenger.Phonenumber);
                         UseridLabel.Text = "Your User-Id is " + userid + " Use it for Login ";
+
+                        //setting ticket limit for new user
+                        MonthlyTicketsCountbusiness monthlyTicketsCountbusiness = new MonthlyTicketsCountbusiness();
+                        monthlyTicketsCountbusiness.AddNewUser(userid);
+
                         ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Great Work!','Registration Successfull','success')", true);
                         NameTextbox.Text = "";
                         DateTextbox.Text = "";

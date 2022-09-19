@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Railway.BusinessLayer;
 using System.Data;
+using System.Globalization;
 
 namespace Railway.UI
 {
@@ -57,6 +58,7 @@ namespace Railway.UI
 
         protected void GetTrainDetails(object sender, EventArgs e)
         {
+            MonthlyTicketsCountbusiness monthlyTicketsCountbusiness = new MonthlyTicketsCountbusiness();
             try
             {
                 //redirect to login page if user is not logged in
@@ -66,7 +68,7 @@ namespace Railway.UI
                 }
                 else
                 {
-                    //get row data of required row 
+                    //getting row data of required row 
                     var btn = (Control)sender;
                     GridViewRow row = (GridViewRow)btn.NamingContainer;
                     Session["trainnumber"] = row.Cells[1].Text;
@@ -82,7 +84,61 @@ namespace Railway.UI
                     Session["AC3tier"] = row.Cells[10].Text;
                     Session["Tatkal"] = row.Cells[11].Text;
                     Session["Ladies"] = row.Cells[12].Text;
-                    Response.Redirect("BookTicket.aspx");
+
+                    //getting current month to check whether monthly ticket limit has exceeded or not
+                    string month = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(DateTime.Now.Month);
+                    if (month == "September")
+                    {
+                        int count = monthlyTicketsCountbusiness.GetSeptemberTicketCount(Convert.ToInt16(Session["Userid"]));
+                        if (count >= 6)
+                        {
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Booking Failed','Monthly limit Exceeded!','error')", true);
+                        }
+                        else
+                        {
+                            monthlyTicketsCountbusiness.UpdateSeptemberlimit(Convert.ToInt16(Session["Userid"]));
+                            Response.Redirect("BookTicket.aspx");
+                        }
+                    }
+                    else if (month == "October")
+                    {
+                        int count = monthlyTicketsCountbusiness.GetOctoberTicketCount(Convert.ToInt16(Session["Userid"]));
+                        if (count >= 6)
+                        {
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Booking Failed','Monthly limit Exceeded!','error')", true);
+                        }
+                        else
+                        {
+                            monthlyTicketsCountbusiness.UpdateOctoberlimit(Convert.ToInt16(Session["Userid"]));
+                            Response.Redirect("BookTicket.aspx");
+                        }
+                    }
+                    else if (month == "November")
+                    {
+                        int count = monthlyTicketsCountbusiness.GetNovemberTicketCount(Convert.ToInt16(Session["Userid"]));
+                        if (count >= 6)
+                        {
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Booking Failed','Monthly limit Exceeded!','error')", true);
+                        }
+                        else
+                        {
+                            monthlyTicketsCountbusiness.UpdateNovemberlimit(Convert.ToInt16(Session["Userid"]));
+                            Response.Redirect("BookTicket.aspx");
+                        }
+                    }
+                    else
+                    {
+                        int count = monthlyTicketsCountbusiness.GetDecemberTicketCount(Convert.ToInt16(Session["Userid"]));
+                        if (count >= 6)
+                        {
+                            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Booking Failed','Monthly limit Exceeded!','error')", true);
+                        }
+                        else
+                        {
+                            monthlyTicketsCountbusiness.UpdateDecemberlimit(Convert.ToInt16(Session["Userid"]));
+                            Response.Redirect("BookTicket.aspx");
+                        }
+                    }
                 }              
             }
             catch (Exception)

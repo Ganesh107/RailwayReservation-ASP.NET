@@ -32,6 +32,7 @@ namespace Railway.UI
                     ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "k", "swal('Login Success','Welcome Back!','success')", true);
                     Session["Userid"] = passenger.Userid;
                     Session["Username"] = passenger.Pname;
+                    Response.Redirect("HomePage.aspx");
                 }
                 else
                 {

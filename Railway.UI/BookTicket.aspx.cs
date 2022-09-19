@@ -52,14 +52,92 @@ namespace Railway.UI
                 {
                     if (Convert.ToInt32(Session["Ac2tier"]) <= 0)
                     {
+                        status = "Waitlist"; //Ticket status = waitlist if seats <= 0
+                    }
+                    else
+                    {
+                        status = "Confirmed";
+                    }
+
+                    //updating seat
+                    TraininfoService traininfoService = new TraininfoService();
+                    traininfoService.UpdateSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]));
+
+                    //Generating Ticket
+                    ticketService.AddTicket(NameTextbox.Text.ToString(), Session["trainname"].ToString(), Convert.ToInt32(AgeTextBox.Text), Session["ticketclass"].ToString(), GenderList.Text.ToString(), Convert.ToInt32(BerthTextBox.Text), Convert.ToInt32(CoachTextBox.Text), Session["arrivaldate"].ToString(), Convert.ToInt32(Session["Userid"]), status);
+                    Response.Redirect("ViewTicket.aspx");
+                }
+                else if (Session["ticketclass"].ToString() == "AC-3 Tier")
+                {
+                    if (Convert.ToInt32(Session["AC3tier"]) <= 0)
+                    {
                         status = "Waitlist";
                     }
                     else
                     {
                         status = "Confirmed";
                     }
+
+                    //upating seat
                     TraininfoService traininfoService = new TraininfoService();
-                    traininfoService.UpdateSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]), Session["ticketclass"].ToString());
+                    traininfoService.UpdateAc3TierSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]));
+
+                    //Generating Ticket
+                    ticketService.AddTicket(NameTextbox.Text.ToString(), Session["trainname"].ToString(), Convert.ToInt32(AgeTextBox.Text), Session["ticketclass"].ToString(), GenderList.Text.ToString(), Convert.ToInt32(BerthTextBox.Text), Convert.ToInt32(CoachTextBox.Text), Session["arrivaldate"].ToString(), Convert.ToInt32(Session["Userid"]), status);
+                    Response.Redirect("ViewTicket.aspx");
+                }
+                else if (Session["ticketclass"].ToString() == "Sleeper")
+                {
+                    if (Convert.ToInt32(Session["Sleeper"]) <= 0)
+                    {
+                        status = "Waitlist";
+                    }
+                    else
+                    {
+                        status = "Confirmed";
+                    }
+
+                    //upating seat
+                    TraininfoService traininfoService = new TraininfoService();
+                    traininfoService.UpdateSleeperSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]));
+
+                    //Generating Ticket
+                    ticketService.AddTicket(NameTextbox.Text.ToString(), Session["trainname"].ToString(), Convert.ToInt32(AgeTextBox.Text), Session["ticketclass"].ToString(), GenderList.Text.ToString(), Convert.ToInt32(BerthTextBox.Text), Convert.ToInt32(CoachTextBox.Text), Session["arrivaldate"].ToString(), Convert.ToInt32(Session["Userid"]), status);
+                    Response.Redirect("ViewTicket.aspx");
+                }
+                else if (Session["ticketclass"].ToString() == "Tatkal")
+                {
+                    if (Convert.ToInt32(Session["Tatkal"]) <= 0)
+                    {
+                        status = "Waitlist";
+                    }
+                    else
+                    {
+                        status = "Confirmed";
+                    }
+
+                    //upating seat
+                    TraininfoService traininfoService = new TraininfoService();
+                    traininfoService.UpdateTatkalSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]));
+
+                    //Generating Ticket
+                    ticketService.AddTicket(NameTextbox.Text.ToString(), Session["trainname"].ToString(), Convert.ToInt32(AgeTextBox.Text), Session["ticketclass"].ToString(), GenderList.Text.ToString(), Convert.ToInt32(BerthTextBox.Text), Convert.ToInt32(CoachTextBox.Text), Session["arrivaldate"].ToString(), Convert.ToInt32(Session["Userid"]), status);
+                    Response.Redirect("ViewTicket.aspx");
+                }
+                else
+                {
+                    if (Convert.ToInt32(Session["Ladies"]) <= 0)
+                    {
+                        status = "Waitlist";
+                    }
+                    else
+                    {
+                        status = "Confirmed";
+                    }
+
+                    //upating seat
+                    TraininfoService traininfoService = new TraininfoService();
+                    traininfoService.UpdateLadiesSeats(Convert.ToInt16(QuantityTextBox.Text), Convert.ToInt16(Session["trainnumber"]));
 
                     //Generating Ticket
                     ticketService.AddTicket(NameTextbox.Text.ToString(), Session["trainname"].ToString(), Convert.ToInt32(AgeTextBox.Text), Session["ticketclass"].ToString(), GenderList.Text.ToString(), Convert.ToInt32(BerthTextBox.Text), Convert.ToInt32(CoachTextBox.Text), Session["arrivaldate"].ToString(), Convert.ToInt32(Session["Userid"]), status);
