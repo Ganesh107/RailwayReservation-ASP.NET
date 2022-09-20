@@ -42,7 +42,6 @@
     <div class="container-fluid" id="BookTickets">
         <div class="row">
             <div class="col-md-12">
-                <div class="col-md-3"><p></p></div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
