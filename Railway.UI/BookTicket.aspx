@@ -122,8 +122,11 @@
                         </div>     
                         <hr />
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <asp:LinkButton ID="AddPassenger" runat="server" CausesValidation="false" CssClass="linkbtn" OnClick="AddPassenger_Click">+Add Passenger</asp:LinkButton>
+                            </div>
+                            <div class="col-md-6">
+                                <asp:LinkButton ID="CancelLinkButton" runat="server" CausesValidation="false" OnClick="CancelLinkButton_Click" CssClass="cancelbtn"><i class="fa fa-close"></i>cancel</asp:LinkButton>
                             </div>
                         </div>
                         <br />
@@ -155,8 +158,11 @@
                         </div>
                         <br />
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" CssClass="linkbtn" OnClick="LinkButton1_Click">+Add Passenger</asp:LinkButton>
+                            </div>
+                            <div class="col-md-6">
+                                <asp:LinkButton ID="CancelLinkButton1" runat="server" CausesValidation="false" OnClick="CancelLinkButton1_Click" CssClass="cancelbtn"><i class="fa fa-close"></i>cancel</asp:LinkButton>
                             </div>
                         </div>
                         <br />
@@ -189,17 +195,20 @@
                         <br />
                         <hr />
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <asp:DropDownList ID="QuantityList" runat="server">
-                                    <asp:ListItem Value="">Choose number of passengers</asp:ListItem>
+                                    <asp:ListItem Value="">Number of passengers</asp:ListItem>
                                     <asp:ListItem>1</asp:ListItem>
                                     <asp:ListItem>2</asp:ListItem>
                                     <asp:ListItem>3</asp:ListItem>
                                 </asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="QuantityValidator" runat="server" ErrorMessage="Please select Number of Tickets" SetFocusOnError="True" ControlToValidate="QuantityList" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <asp:LinkButton ID="AddButton" runat="server" CssClass="linkbtn" OnClick="ConfirmPayment" CausesValidation="true">Confirm Payment</asp:LinkButton>
+                            </div>
+                            <div class="col-md-2">
+                                Total Amount - <asp:Label ID="TotalRs" runat="server" Text="Label" CssClass="font-weight-bold"></asp:Label>
                             </div>
                         </div>
                     </div>

@@ -231,6 +231,15 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.LinkButton AddPassenger;
 
         /// <summary>
+        /// CancelLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton CancelLinkButton;
+
+        /// <summary>
         /// NameTextBox1 control.
         /// </summary>
         /// <remarks>
@@ -328,6 +337,15 @@ namespace Railway.UI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+
+        /// <summary>
+        /// CancelLinkButton1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton CancelLinkButton1;
 
         /// <summary>
         /// NameTextBox2 control.
@@ -445,5 +463,14 @@ namespace Railway.UI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton AddButton;
+
+        /// <summary>
+        /// TotalRs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TotalRs;
     }
 }

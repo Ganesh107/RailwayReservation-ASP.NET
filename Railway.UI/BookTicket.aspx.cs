@@ -22,6 +22,8 @@ namespace Railway.UI
                     GenderList1.Visible = false;
                     BerthTextBox1.Visible = false;
                     CoachTextBox1.Visible = false;
+                    CancelLinkButton.Visible = false;
+                    CancelLinkButton1.Visible = false;
 
                     NameTextBox2.Visible = false;
                     AgeTextBox2.Visible = false;
@@ -47,6 +49,7 @@ namespace Railway.UI
                     int rate = ticketrateService.GetTicketRate(Session["ticketclass"].ToString());
                     RateLabel.Text = rate.ToString();
                     TotalrateLabel.Text = rate.ToString();
+                    TotalRs.Text = TotalrateLabel.Text;
                 }
             }
 			catch (Exception)
@@ -214,8 +217,11 @@ namespace Railway.UI
                 BerthTextBox1.Visible = true;
                 CoachTextBox1.Visible = true;
                 LinkButton1.Visible = true;
-                int rate = int.Parse(TotalrateLabel.Text);
+                CancelLinkButton.Visible = true;
+                NameTextBox1.Focus();
+                int rate = int.Parse(RateLabel.Text);
                 TotalrateLabel.Text = (rate * 2).ToString();
+                TotalRs.Text = TotalrateLabel.Text;
             }
             catch (Exception)
             {
@@ -232,8 +238,53 @@ namespace Railway.UI
                 GenderList2.Visible = true;
                 BerthTextBox2.Visible = true;
                 CoachTextBox2.Visible = true;
-                int rate = int.Parse(TotalrateLabel.Text);
+                CancelLinkButton1.Visible = true;
+                NameTextBox2.Focus();
+                int rate = int.Parse(RateLabel.Text);
                 TotalrateLabel.Text = (rate * 3).ToString();
+                TotalRs.Text = TotalrateLabel.Text;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        protected void CancelLinkButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                NameTextBox1.Visible = false;
+                AgeTextBox1.Visible = false;
+                GenderList1.Visible = false;
+                BerthTextBox1.Visible = false;
+                CoachTextBox1.Visible = false;
+                CancelLinkButton.Visible = false;
+                TotalrateLabel.Text = RateLabel.Text;
+                TotalRs.Text = TotalrateLabel.Text;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        protected void CancelLinkButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TicketrateService ticketrateService = new TicketrateService();
+                NameTextBox2.Visible = false;
+                AgeTextBox2.Visible = false;
+                GenderList2.Visible = false;
+                BerthTextBox2.Visible = false;
+                CoachTextBox2.Visible = false;
+                LinkButton1.Visible = false;
+                CancelLinkButton1.Visible = false;
+                int rate = ticketrateService.GetTicketRate(Session["ticketclass"].ToString());
+
+                TotalrateLabel.Text = (rate * 2).ToString();
+                TotalRs.Text = TotalrateLabel.Text;
             }
             catch (Exception)
             {
