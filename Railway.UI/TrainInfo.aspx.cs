@@ -28,8 +28,8 @@ namespace Railway.UI
                     DataTable dt = traininfoService.FilterTrains(Session["Startloc"].ToString(), Session["Endloc"].ToString(), Session["Date"].ToString());
 
                     //poupulating gridview with result
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
+                    TrainList.DataSource = dt;
+                    TrainList.DataBind();
                 }
             }
             catch (Exception)
@@ -47,8 +47,8 @@ namespace Railway.UI
                 DataTable dt = traininfoService.FilterTrains(StartlocList.Text, EndlocList.Text, DateTextBox.Text);
 
                 //poupulating gridview with result
-                GridView1.DataSource = dt;
-                GridView1.DataBind();
+                TrainList.DataSource = dt;
+                TrainList.DataBind();
             }
             catch (Exception)
             {

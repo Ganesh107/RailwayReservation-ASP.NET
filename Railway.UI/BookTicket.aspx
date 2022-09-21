@@ -101,7 +101,7 @@
                             </div>
                             <div class="col-md-2">
                                 <asp:TextBox ID="AgeTextBox" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Age"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="AgeValidator" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:DropDownList ID="GenderList" runat="server" CssClass="form-control">
@@ -133,11 +133,11 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <asp:TextBox ID="NameTextBox1" runat="server" CssClass="form-control"  placeholder="Name"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter name" SetFocusOnError="True" ControlToValidate="NameTextbox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="NameFieldValidator1" runat="server" ErrorMessage="Please enter name" SetFocusOnError="True" ControlToValidate="NameTextbox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:TextBox ID="AgeTextBox1" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Age"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="AgeFieldValidator1" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:DropDownList ID="GenderList1" runat="server" CssClass="form-control">
@@ -145,21 +145,21 @@
                                     <asp:ListItem>Male</asp:ListItem>
                                     <asp:ListItem>Female</asp:ListItem>
                                 </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please select gender" SetFocusOnError="True" ControlToValidate="GenderList1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="GenderFieldValidator1" runat="server" ErrorMessage="Please select gender" SetFocusOnError="True" ControlToValidate="GenderList1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-3">
                                 <asp:TextBox ID="BerthTextBox1" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Berth Number"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter berth number" SetFocusOnError="True" ControlToValidate="BerthTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="BerthFieldValidator1" runat="server" ErrorMessage="Please enter berth number" SetFocusOnError="True" ControlToValidate="BerthTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:TextBox ID="CoachTextBox1" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Coach Number"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="Please enter coach number" SetFocusOnError="True" ControlToValidate="CoachTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="CoachFieldValidator1" runat="server" ErrorMessage="Please enter coach number" SetFocusOnError="True" ControlToValidate="CoachTextBox1" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                         </div>
                         <br />
                         <div class="row">
                             <div class="col-md-6">
-                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" CssClass="linkbtn" OnClick="LinkButton1_Click">+Add Passenger</asp:LinkButton>
+                                <asp:LinkButton ID="AddPassengerLinkButton1" runat="server" CausesValidation="false" CssClass="linkbtn" OnClick="AddPassengerLinkButton1_Click">+Add Passenger</asp:LinkButton>
                             </div>
                             <div class="col-md-6">
                                 <asp:LinkButton ID="CancelLinkButton1" runat="server" CausesValidation="false" OnClick="CancelLinkButton1_Click" CssClass="cancelbtn"><i class="fa fa-close"></i>cancel</asp:LinkButton>
@@ -169,11 +169,11 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <asp:TextBox ID="NameTextBox2" runat="server" CssClass="form-control"  placeholder="Name"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Please enter name" SetFocusOnError="True" ControlToValidate="NameTextbox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="NameFieldValidator2" runat="server" ErrorMessage="Please enter name" SetFocusOnError="True" ControlToValidate="NameTextbox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:TextBox ID="AgeTextBox2" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Age"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="AgeFieldValidator2" runat="server" ErrorMessage="Please enter age" SetFocusOnError="True" ControlToValidate="AgeTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:DropDownList ID="GenderList2" runat="server" CssClass="form-control">
@@ -181,15 +181,15 @@
                                     <asp:ListItem>Male</asp:ListItem>
                                     <asp:ListItem>Female</asp:ListItem>
                                 </asp:DropDownList>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="Please select gender" SetFocusOnError="True" ControlToValidate="GenderList2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="GenderFieldValidator2" runat="server" ErrorMessage="Please select gender" SetFocusOnError="True" ControlToValidate="GenderList2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-3">
                                 <asp:TextBox ID="BerthTextBox2" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Berth Number"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Please enter berth number" SetFocusOnError="True" ControlToValidate="BerthTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="BerthFieldValidator2" runat="server" ErrorMessage="Please enter berth number" SetFocusOnError="True" ControlToValidate="BerthTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                             <div class="col-md-2">
                                 <asp:TextBox ID="CoachTextBox2" runat="server" CssClass="form-control" TextMode="Number"  placeholder="Coach Number"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="Please enter coach number" SetFocusOnError="True" ControlToValidate="CoachTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="CoachFieldValidator2" runat="server" ErrorMessage="Please enter coach number" SetFocusOnError="True" ControlToValidate="CoachTextBox2" Display="Dynamic" CssClass="invalid-feedback"></asp:RequiredFieldValidator>
                             </div>
                         </div>
                         <br />

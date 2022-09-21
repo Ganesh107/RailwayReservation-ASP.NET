@@ -14,10 +14,20 @@ namespace Railway.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            try
+            {
+                if (Session["Adminid"] == null)
+                {
+                    Response.Redirect("AdminLogin.aspx");
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
-        protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
+        protected void TrainsGridView_RowUpdated(object sender, GridViewUpdatedEventArgs e)
         {
             try
             {
@@ -30,7 +40,7 @@ namespace Railway.UI
             }
         }
 
-        protected void GridView1_RowDeleted(object sender, GridViewDeletedEventArgs e)
+        protected void TrainsGridView_RowDeleted(object sender, GridViewDeletedEventArgs e)
         {
             try
             {
@@ -39,6 +49,22 @@ namespace Railway.UI
             catch (Exception)
             {
 
+                throw;
+            }
+        }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Session["Adminid"] != null)
+                {
+                    Session["Adminid"] = null;
+                    Response.Redirect("AdminLogin.aspx");
+                }
+            }
+            catch (Exception)
+            {
                 throw;
             }
         }

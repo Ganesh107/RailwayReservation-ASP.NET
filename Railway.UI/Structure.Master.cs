@@ -13,9 +13,6 @@ namespace Railway.UI
         {
             try
             {
-                Response.Cache.SetCacheability(HttpCacheability.NoCache);
-                Response.Cache.SetExpires(DateTime.Now.AddSeconds(-1));
-                Response.Cache.SetNoStore();
                 if (Session["Userid"] == null)
                 {
                     LogoutButton.Visible = false;

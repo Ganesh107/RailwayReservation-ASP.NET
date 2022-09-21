@@ -74,7 +74,30 @@ namespace Railway.UI
 
         public void EditTrainbtn_click(object sender, EventArgs e)
         {
-            Response.Redirect("EditTrains.aspx");
+            try
+            {
+                Response.Redirect("EditTrains.aspx");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               if (Session["Adminid"] != null)
+               {
+                    Session["Adminid"] = null;
+                    Response.Redirect("AdminLogin.aspx");
+               }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

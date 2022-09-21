@@ -6,3 +6,7 @@
 a:hover{
     text-decoration:none;
 }
+
+.btn{
+    float:right;
+}

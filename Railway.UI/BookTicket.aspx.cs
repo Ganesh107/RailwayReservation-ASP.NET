@@ -15,8 +15,13 @@ namespace Railway.UI
         {
 			try
 			{
+                if (Session["Userid"] == null)
+                {
+                    Response.Redirect("UserLogin.aspx");
+                }
                 if (!IsPostBack)
                 {
+                    //making Textboxes invisible
                     NameTextBox1.Visible = false;
                     AgeTextBox1.Visible = false;
                     GenderList1.Visible = false;
@@ -30,7 +35,8 @@ namespace Railway.UI
                     GenderList2.Visible = false;
                     BerthTextBox2.Visible = false;
                     CoachTextBox2.Visible = false;
-                    LinkButton1.Visible = false;
+                    AddPassengerLinkButton1.Visible = false;
+
                     //assigning bootstrap card label - values dynamically
                     TrainnameLabel.Text = Session["trainname"].ToString();
                     DeparturetimeLbel.Text = Session["departuretime"].ToString();
@@ -58,6 +64,7 @@ namespace Railway.UI
 			}
         }
 
+        //Function to Generate tickets
         protected void ConfirmPayment(object sender, EventArgs e)
         {
             try
@@ -207,6 +214,7 @@ namespace Railway.UI
             }
         }
 
+        //Function to create textboxes to add 2nd passenger details 
         protected void AddPassenger_Click(object sender, EventArgs e)
         {
             try
@@ -216,7 +224,7 @@ namespace Railway.UI
                 GenderList1.Visible = true;
                 BerthTextBox1.Visible = true;
                 CoachTextBox1.Visible = true;
-                LinkButton1.Visible = true;
+                AddPassengerLinkButton1.Visible = true;
                 CancelLinkButton.Visible = true;
                 NameTextBox1.Focus();
                 int rate = int.Parse(RateLabel.Text);
@@ -229,7 +237,8 @@ namespace Railway.UI
             }
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+        //Function to create textboxes to add 3rd passenger details
+        protected void AddPassengerLinkButton1_Click(object sender, EventArgs e) 
         {
             try
             {
@@ -260,6 +269,7 @@ namespace Railway.UI
                 BerthTextBox1.Visible = false;
                 CoachTextBox1.Visible = false;
                 CancelLinkButton.Visible = false;
+                AddPassengerLinkButton1.Visible = false;
                 TotalrateLabel.Text = RateLabel.Text;
                 TotalRs.Text = TotalrateLabel.Text;
             }
@@ -279,7 +289,7 @@ namespace Railway.UI
                 GenderList2.Visible = false;
                 BerthTextBox2.Visible = false;
                 CoachTextBox2.Visible = false;
-                LinkButton1.Visible = false;
+                AddPassengerLinkButton1.Visible = false;
                 CancelLinkButton1.Visible = false;
                 int rate = ticketrateService.GetTicketRate(Session["ticketclass"].ToString());
 

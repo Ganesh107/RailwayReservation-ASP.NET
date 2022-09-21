@@ -159,13 +159,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox AgeTextBox;
 
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// AgeValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AgeValidator;
 
         /// <summary>
         /// GenderList control.
@@ -249,13 +249,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox NameTextBox1;
 
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// NameFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameFieldValidator1;
 
         /// <summary>
         /// AgeTextBox1 control.
@@ -267,13 +267,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox AgeTextBox1;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// AgeFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AgeFieldValidator1;
 
         /// <summary>
         /// GenderList1 control.
@@ -285,13 +285,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.DropDownList GenderList1;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// GenderFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator GenderFieldValidator1;
 
         /// <summary>
         /// BerthTextBox1 control.
@@ -303,13 +303,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox BerthTextBox1;
 
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// BerthFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BerthFieldValidator1;
 
         /// <summary>
         /// CoachTextBox1 control.
@@ -321,22 +321,22 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox CoachTextBox1;
 
         /// <summary>
-        /// RequiredFieldValidator6 control.
+        /// CoachFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CoachFieldValidator1;
 
         /// <summary>
-        /// LinkButton1 control.
+        /// AddPassengerLinkButton1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton AddPassengerLinkButton1;
 
         /// <summary>
         /// CancelLinkButton1 control.
@@ -357,13 +357,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox NameTextBox2;
 
         /// <summary>
-        /// RequiredFieldValidator7 control.
+        /// NameFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator NameFieldValidator2;
 
         /// <summary>
         /// AgeTextBox2 control.
@@ -375,13 +375,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox AgeTextBox2;
 
         /// <summary>
-        /// RequiredFieldValidator8 control.
+        /// AgeFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator AgeFieldValidator2;
 
         /// <summary>
         /// GenderList2 control.
@@ -393,13 +393,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.DropDownList GenderList2;
 
         /// <summary>
-        /// RequiredFieldValidator9 control.
+        /// GenderFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator GenderFieldValidator2;
 
         /// <summary>
         /// BerthTextBox2 control.
@@ -411,13 +411,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox BerthTextBox2;
 
         /// <summary>
-        /// RequiredFieldValidator10 control.
+        /// BerthFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator BerthFieldValidator2;
 
         /// <summary>
         /// CoachTextBox2 control.
@@ -429,13 +429,13 @@ namespace Railway.UI
         protected global::System.Web.UI.WebControls.TextBox CoachTextBox2;
 
         /// <summary>
-        /// RequiredFieldValidator11 control.
+        /// CoachFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator CoachFieldValidator2;
 
         /// <summary>
         /// QuantityList control.

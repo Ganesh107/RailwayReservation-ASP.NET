@@ -3,6 +3,13 @@
     <link href="css/AdminPage.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceholder1" runat="server">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <asp:Button ID="LogoutButton" runat="server" Text="Logout" CssClass="btn btn-danger" CausesValidation="false" OnClick="LogoutButton_Click"/>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
            <div class="col-md-2"></div>

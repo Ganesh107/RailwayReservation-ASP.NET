@@ -5,6 +5,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceholder1" runat="server">
     <div class="container-fluid">
         <div class="row">
+            <div class="col">
+                <asp:Button ID="LogoutButton" runat="server" Text="Logout" CssClass="btn btn-danger" CausesValidation="false" OnClick="LogoutButton_Click"/>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
@@ -19,7 +26,7 @@
 
                         <div class="row">
                             <div class="col-md-12 overflow">
-                                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" DataKeyNames="trainnumber" CssClass="table table-striped" OnRowDeleted="GridView1_RowDeleted" OnRowUpdated="GridView1_RowUpdated">
+                                <asp:GridView ID="TrainsGridView" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1" DataKeyNames="trainnumber" CssClass="table table-striped" OnRowDeleted="TrainsGridView_RowDeleted" OnRowUpdated="TrainsGridView_RowUpdated">
                                     <Columns>
                                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                                         <asp:BoundField DataField="Trainnumber" HeaderText="Trainnumber" SortExpression="Trainnumber" ReadOnly="True" />
@@ -62,4 +69,5 @@
             </div>
         </div>
     </div>
+    <br />
 </asp:Content>

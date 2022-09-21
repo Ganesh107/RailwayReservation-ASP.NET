@@ -72,7 +72,7 @@
                         <div class="row">
                             <div class="col-md-12 overflow-auto">
                                 <center>
-                                <asp:GridView ID="GridView1" runat="server"  CssClass="table table-striped" DataKeyNames="trainnumber" >
+                                <asp:GridView ID="TrainList" runat="server"  CssClass="table table-striped" DataKeyNames="trainnumber" >
                                     <Columns>
                                         <asp:TemplateField ShowHeader="False">
                                             <ItemTemplate>
